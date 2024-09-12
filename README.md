@@ -1,1 +1,2 @@
 # STM8S103-TIMER1-ENCODER-MODE-ASSEMBLY-EAMPLE
+TIMER1 ENCODER MODE, PC6 and PC7 as encoder inputs to timer1. Counts from 0 to 1000. Data is sent to UART consolle through pin PD5 TX 9600 BAUD. The code uses Timer4 to transmit the values every 50 ms. The STVD project is attached here written in assembly language. The AFR0 OPTION byte has to be enabled while programming with STVP/STLINK as PC6 and PC7 are TIM1 input channels (alternate function). @ steps are counted for each detent of the encoder.
